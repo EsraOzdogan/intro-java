@@ -1,6 +1,7 @@
 package com.etiya;
 
 import com.etiya.basics.VariablesAndLoops;
+import com.etiya.oop.Category;
 import com.etiya.oop.Product;
 public class Main {
     public static void main(String[] args) {
@@ -10,6 +11,7 @@ public class Main {
 
 
 
+        //PRODUCT
         Product product1 = new Product();  //parametresiz constructorla olan
         product1.setId(1);
         product1.setName("Elma");
@@ -22,5 +24,17 @@ public class Main {
 
         System.out.println(product1);
         System.out.println(product2);
+
+
+        //CATEGORY
+        Category category1 = new Category();  //parametresiz constructorla olan
+        category1.setId(1);
+        category1.setName("Sebze");
+        category1.setDescription("Sebze kategorisi");
+
+        Category category2  = new Category(2, "Meyve","Meyve kategorisi");  //parametreli constructorla olan
+
+        System.out.println(category1);
+        System.out.println(category2);
     }
 }
